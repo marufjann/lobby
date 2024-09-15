@@ -2,7 +2,11 @@ from django.shortcuts import render
 
 
 def catalog(request):
-    return render(request, "goods/catalog.html")
+    context = {
+        "title": "Home - Каталог",
+        
+    }
+    return render(request, "goods/catalog.html", context)
 
 
 def product(request):
