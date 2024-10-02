@@ -23,6 +23,7 @@ def catalog(request, category_slug):
 
     paginator = Paginator(goods, 3)
     current_page = paginator.page(int(page))
+    
     context = {
         "title": "Home - Каталог",
         "goods": current_page,
