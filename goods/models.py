@@ -1,6 +1,6 @@
 from email.mime import image
 from tabnanny import verbose
-from tkinter import CASCADE
+from django.db import models
 from unicodedata import category
 from django.db import models
 
